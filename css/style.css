@@ -687,15 +687,9 @@ h6 {
     justify-content: center;
 }
 
-/* Определяем размещение по горизонтали элементов обернутых в label */
-.form-radio-hidden {
-    display: flex;
-    flex-direction: row;
-    height: 28px;
-    position: relative;
-    align-items: center;
-}
 
+
+/* Радио кнопки слайдера "Наше производство" */
 .form-radio-hidden+.form-radio-hidden {
     margin-left: 10px;
 }
@@ -711,19 +705,15 @@ h6 {
 
 /* Устанавливаем параметры элементов, заменяющих штатные радио-кнопки */
 .form-radio-hidden .radio {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     display: inline-block;
     position: relative;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    /* margin-right: 5px; */
+
     border: 1px solid #BCBFC4;
-    /* border: 1px solid #999999; */
     background-color: #EDEFF2;
-    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); */
+
     cursor: pointer;
     outline: none;
     box-sizing: border-box;
@@ -733,7 +723,6 @@ h6 {
 /* Устанавливаем параметры элементов, заменяющих штатные радио-кнопки при наведении */
 .form-radio-hidden:hover .radio {
     background-color: #7c7777;
-    /* box-shadow: inset 1px 2px 3px 0 rgba(0, 0, 0, 0.1); */
 }
 
 /* Устанавливаем параметры элементов, заменяющих штатные выбранные радио-кнопки */
@@ -741,23 +730,3 @@ h6 {
     background-color: rgba(255, 51, 51, 0.5);
     cursor: default;
 }
-
-/* Добавляем декор
-.form-radio-hidden:hover .radio::before,
-.form-radio-hidden input:checked+.radio::before {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background-color: #ddd;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.form-radio-hidden input:checked+.radio::before {
-    background-color: #555;
-    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
-}
- */
