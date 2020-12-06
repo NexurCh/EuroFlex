@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Еврофлекс Псков</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -311,7 +312,7 @@
                         </li>
                     </ul>
 
-                    <div class="production-slider__radio-wrap">
+                    <!-- <div class="production-slider__radio-wrap">
                         <label for="radio-1" class="form-radio-hidden">
                             <input type="radio" name="demo" value="1" id="radio-1">
                             <span class="radio"></span>
@@ -336,6 +337,35 @@
                         <label for="radio-6" class="form-radio-hidden">
                             <input type="radio" name="demo" value="6" id="radio-6">
                             <span class="radio"></span>
+                        </label>
+                    </div> -->
+
+                    <div class="production-slider__radio-wrapper">
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="1">
+                            <span class="production-slider__custom-radio"></span>
+                        </label>
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="2"
+                                checked>
+                            <span class="production-slider__custom-radio"></span>
+                        </label>
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="3">
+                            <span class="production-slider__custom-radio"></span>
+                        </label>
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="4">
+                            <span class="production-slider__custom-radio"></span>
+                        </label>
+
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="5">
+                            <span class="production-slider__custom-radio"></span>
+                        </label>
+                        <label class="production-slider__radio-wrap">
+                            <input class="production-slider__hide-radio" type="radio" name="slider__radio" value="6">
+                            <span class="production-slider__custom-radio"></span>
                         </label>
                     </div>
 
@@ -395,6 +425,7 @@
     </section>
     <!--  /.аdvantages  -->
 
+
     <footer class="main-footer">
         <div class="feedback">
             <div class="container">
@@ -403,38 +434,38 @@
                     <ul class="feedback__list">
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">Пакеты для овощей
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">Пакеты для мусора
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">ПЭТ контейнеры для овощей
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">Пакеты с клапаном из CPP и LDPE
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">Пакеты - майка
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                         <li class="feedback__item">
                             <label class="feedback__checkbox-text">Пленка BOPP
-                                <input type="checkbox">
-                                <span class="feedback__hide-checkbox"></span>
+                                <input class="feedback__hide-checkbox" type="checkbox">
+                                <span class="feedback__custom-checkbox"></span>
                             </label>
                         </li>
                     </ul>
@@ -444,9 +475,15 @@
         </div><!-- /.feedback -->
 
         <div class="private">
-
+            <div class="container">
+                <p class="private__text">2018, Все названия, логотипы и товарные знаки являются собственностью
+                    корпорации
+                    ООО “Company name”</p>
+                <p class="private__text">Посещение данного сайта и использование содержащейся на нем информации
+                    регулируется
+                    условиями нашего "Правового<br> положения". Ознакомьтесь с нашей "Политикой конфиденциальности".</p>
+            </div>
         </div><!-- /.private -->
-
     </footer><!-- /.footer -->
 
     <script src="js/app.js"></script>
