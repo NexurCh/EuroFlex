@@ -5,7 +5,13 @@ var cards = document.querySelector(".decision__cards");
 
 
 btnToggle.addEventListener('click', function () {
-//   btnToggle.classList.toggle("rotate-arrow");
+  btnToggle.classList.toggle("decision__hide-arrow--rotate");
   cards.classList.toggle("hide-cards");
-  console.log('2222');
+  if (
+    document.querySelector('.decision__hide-text').innerHTML == 'Скрыть все решения') {
+    document.querySelector('.decision__hide-text').innerHTML = 'Показать все решения';
+  }
+  else {
+    document.querySelector('.decision__hide-text').innerHTML = 'Скрыть все решения';
+  }
 })
